@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T24aZc+uAEq7e7xrEOpMBi3bLX7JrkPq3JfINEohcfE=",
+  "Source": "Lol-Runes-Service.Web",
+  "BasePath": "_content/Lol-Runes-Service.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

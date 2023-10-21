@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lol-Runes-Service", "Lol-Runes-Service\Lol-Runes-Service.csproj", "{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Web", "src\Lol-Runes-Service\Lol-Runes-Service.Web.csproj", "{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Laniakea", "1 - Laniakea", "{7ADAFF75-0457-49E9-9925-4FAF88A87C10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Cross", "2 - Cross", "{06D1E46F-ACE5-4235-8810-99F4295A8FE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.App", "src\Lol-Runes-Service.App\Lol-Runes-Service.App.csproj", "{0147100E-AE1D-46C7-91BA-B2E58569283D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Infra", "src\Lol-Runes-Service.Infra\Lol-Runes-Service.Infra.csproj", "{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.IoC", "src\Lol-Runes-Service.IoC\Lol-Runes-Service.IoC.csproj", "{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Shared", "src\Lol-Runes-Service.Shared\Lol-Runes-Service.Shared.csproj", "{56D05C44-5305-45B8-80F3-A5F2879CBB34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,32 @@ Global
 		{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0147100E-AE1D-46C7-91BA-B2E58569283D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0147100E-AE1D-46C7-91BA-B2E58569283D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0147100E-AE1D-46C7-91BA-B2E58569283D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0147100E-AE1D-46C7-91BA-B2E58569283D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7F7ED6D-15CA-4AC7-82A0-A882C139CFD5} = {7ADAFF75-0457-49E9-9925-4FAF88A87C10}
+		{0147100E-AE1D-46C7-91BA-B2E58569283D} = {7ADAFF75-0457-49E9-9925-4FAF88A87C10}
+		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40} = {7ADAFF75-0457-49E9-9925-4FAF88A87C10}
+		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0} = {06D1E46F-ACE5-4235-8810-99F4295A8FE0}
+		{56D05C44-5305-45B8-80F3-A5F2879CBB34} = {06D1E46F-ACE5-4235-8810-99F4295A8FE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5E5229D-3DE6-4331-99F0-ABD33C76E8C2}
