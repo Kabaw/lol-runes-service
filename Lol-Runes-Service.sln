@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.IoC", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Shared", "src\Lol-Runes-Service.Shared\Lol-Runes-Service.Shared.csproj", "{56D05C44-5305-45B8-80F3-A5F2879CBB34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lol-Runes-Service.Domain", "src\Lol-Runes-Service.Domain\Lol-Runes-Service.Domain.csproj", "{101AE024-4A53-492A-9B72-0CD000C7E285}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Domain", "src\Lol-Runes-Service.Domain\Lol-Runes-Service.Domain.csproj", "{101AE024-4A53-492A-9B72-0CD000C7E285}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

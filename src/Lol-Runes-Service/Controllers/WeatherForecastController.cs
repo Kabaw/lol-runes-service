@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lol_Runes_Service.Controllers
+namespace Lol_Runes_Service.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

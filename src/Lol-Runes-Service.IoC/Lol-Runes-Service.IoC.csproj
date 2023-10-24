@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lol-Runes-Service.App\Lol-Runes-Service.App.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service.Domain\Lol-Runes-Service.Domain.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service.Infra\Lol-Runes-Service.Infra.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service.Shared\Lol-Runes-Service.Shared.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service\Lol-Runes-Service.Web.csproj" />
+  </ItemGroup>
+
 </Project>

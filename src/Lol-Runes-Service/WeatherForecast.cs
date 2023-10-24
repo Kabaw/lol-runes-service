@@ -1,4 +1,4 @@
-namespace Lol_Runes_Service
+namespace Lol_Runes_Service.Web
 {
     public class WeatherForecast
     {
