@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.IoC", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lol-Runes-Service.Shared", "src\Lol-Runes-Service.Shared\Lol-Runes-Service.Shared.csproj", "{56D05C44-5305-45B8-80F3-A5F2879CBB34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lol-Runes-Service.Domain", "src\Lol-Runes-Service.Domain\Lol-Runes-Service.Domain.csproj", "{101AE024-4A53-492A-9B72-0CD000C7E285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D05C44-5305-45B8-80F3-A5F2879CBB34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101AE024-4A53-492A-9B72-0CD000C7E285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101AE024-4A53-492A-9B72-0CD000C7E285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101AE024-4A53-492A-9B72-0CD000C7E285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101AE024-4A53-492A-9B72-0CD000C7E285}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{B7FD1024-A262-43BF-BCAF-C4F3B73F3B40} = {7ADAFF75-0457-49E9-9925-4FAF88A87C10}
 		{78A3AD69-8EFC-47F8-8A0C-415DC3500BF0} = {06D1E46F-ACE5-4235-8810-99F4295A8FE0}
 		{56D05C44-5305-45B8-80F3-A5F2879CBB34} = {06D1E46F-ACE5-4235-8810-99F4295A8FE0}
+		{101AE024-4A53-492A-9B72-0CD000C7E285} = {7ADAFF75-0457-49E9-9925-4FAF88A87C10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5E5229D-3DE6-4331-99F0-ABD33C76E8C2}
