@@ -1,3 +1,4 @@
+using Lol_Runes_Service.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lol_Runes_Service.Web.Controllers
@@ -12,10 +13,12 @@ namespace Lol_Runes_Service.Web.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IRunaRepository runaRepository;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRunaRepository runaRepository)
         {
             _logger = logger;
+            this.runaRepository = runaRepository;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -28,6 +31,12 @@ namespace Lol_Runes_Service.Web.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("GetWeatherForecast/Test")]
+        public string GetTest()
+        {
+            return runaRepository.GetInfo();
         }
     }
 }

@@ -12,4 +12,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lol-Runes-Service.App\Lol-Runes-Service.App.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service.IoC\Lol-Runes-Service.IoC.csproj" />
+    <ProjectReference Include="..\Lol-Runes-Service.Shared\Lol-Runes-Service.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
