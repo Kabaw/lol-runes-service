@@ -15,7 +15,7 @@ public abstract class BaseRepository<T> : IRepository<T>
     protected DbSet<T> db;
     protected DataContext dataContext;
 
-    protected BaseRepository(DataContext dataContext, DbSet<T> db)
+    public BaseRepository(DataContext dataContext, DbSet<T> db)
     {
         this.db = db;
         this.dataContext = dataContext;
@@ -37,8 +37,8 @@ public abstract class BaseRepository<T> : IRepository<T>
 
     public void Delete(long id)
     {
-        db.Where(x => x.Id == id).ExecuteDelete();
-        dataContext.SaveChanges();
+        //db.Where(x => x.Id == id).ExecuteDelete();
+        //dataContext.SaveChanges();
     }
 
     public bool Exists(long id)

@@ -18,15 +18,20 @@ public static class InjectionBootstrap
 
     public static void AddManagers(this IServiceCollection container)
     {
-        AddContextManagers(typeof(IRepository), container);
+        AddContextManagers(container, typeof(IRepository<>));
     }
 
-    private static void AddContextManagers(Type managerType, IServiceCollection container)
+    private static void AddContextManagers(IServiceCollection container, Type managerType, Type? baseManagerType = null)
     {
-        var typesToScan = assemblies.SelectMany(a => a.GetTypes())
-                                          .Where(t => t.IsAssignableTo(managerType));
+        var adsad = assemblies[2].ExportedTypes.Select(t => t.GetTypeInfo());
+        //var typesToScan12 = assemblies[0].GetTypes();
+        var typesToScan2 = assemblies[2].GetTypes();
 
-        var typesToRegister = typesToScan.Select(t => t.GetTypeInfo())
+        var typesToScan = assemblies.SelectMany(a => a.GetTypes())
+                                          .Where(t => t.GetInterfaces().Contains(managerType));
+                                          //.Where(t => t.IsAssignableTo(managerType));
+
+        var typesToRegister = adsad.Select(t => t.GetTypeInfo())
                                          .Select(t => new
                                          {
                                              InterfaceType = t.ImplementedInterfaces.FirstOrDefault(i => i.Name == $"I{t.Name}"),

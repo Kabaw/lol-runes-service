@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lol_Runes_Service.Domain.Repositories;
 
-public interface IRunaRepository
+public interface IRuneStoneRepository
 {
     string GetInfo();
 }

@@ -13,9 +13,9 @@ namespace Lol_Runes_Service.Web.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly IRunaRepository runaRepository;
+        private readonly IRuneStoneRepository runaRepository;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRunaRepository runaRepository)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRuneStoneRepository runaRepository)
         {
             _logger = logger;
             this.runaRepository = runaRepository;
